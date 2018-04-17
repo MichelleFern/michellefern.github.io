@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title>Team UNI</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+      <!--Skeleton CSS-->
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+      <!--SlickNav CSS
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"> 
+-->
+
+     <!--Scroll-->
+<link rel="stylesheet" href="CSS/scroll.css">
+     
+      <!--Our CSS-->
+      <link rel="stylesheet" href="../css/styles.css">
+      <link href="CSS/Cecil.css" rel="stylesheet" type="text/css">
+      <!--Put your CSS Here-->
+      <style>
+div.background {
+	border: 2px solid black;
+}
+div.transbox {
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+div.transbox p {
+	margin: 5%;
+	font-weight: bold;
+	color: #000000;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+p.ctr {
+	text-align: center;
+}
+</style>
+      </head>
+
+      <body>
+<div class="header">
+        <nav class="navbar">
+    <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../bre/animation.html">Animation</a></li>
+            <li><a href="../don/api.html">API</a></li>
+            <li><a href="../mic/audvid.html">Audio/Video</a></li>
+            <li><a href="../joe/symantec.html">Semantics</a></li>
+            <li><a href="../ref/ref.html">References</a></li>
+          </ul>
+  </nav>
+        <div class="container title smlogo"> <img src="images/bluelogo.png" alt="Logo"/>
+    <h1>UNI</h1>
+    <h3>Where unified code meets unique design</h3>
+  </div>
+        <! -------------- scroll down 1-------------- !>
+  <div class="contain"> <a class="jumper" href="#example">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    </a> </div>
+  <! -------------- scroll down 1-------------- !><div class="info">
+    <div class="container" id="info">
+            <h2>Learning Canvas</h2>
+            <p>Come with me and learn some advance Canvas element coding without breaking a sweat. You’ll learn how to make simple shapes and object’s come alive, all while moving across you’re screen with ease. </p>
+          </div>
+  </div>
+      </div>
+<div class="example" id="example">
+        <div class="container">
+    <h2>Example Code</h2>
+    <! -------------- scroll down 2-------------- !>
+  <div class="contain"> <a class="jumper" href="#interactive">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    </a> </div>
+  <! -------------- scroll down 2-------------- !> 
+    <div class="background">
+            <div class="transbox">
+        <p class="ctr"> Here's the canvas code to get you started on your clock</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <img src="images/Code1.png" width="500" height="500"> </div>
+          </div>
+  </div>
+      </div>
+<div class="interactive" id="interactive">
+        <div class="container">
+    <h2> your end result </h2>
+    <canvas id="canvas" width="400" height="400"
+style="background-color: #194FF4; right: 400px; left: -1px; padding-right: 121px; margin-right: 243px; border-top-right-radius: 68px; border-bottom-right-radius: 89px; margin-top: 10px; margin-left: 269px;"> </canvas>
+    <script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script> 
+  </div>
+      </div>
+<div class="footer" id="footer">
+        <div class="container">
+    <p>Copyright &#64; 2017 UNI TEAM</p>
+  </div>
+      </div>
+
+<!--JQuery JS--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+<!--SlickNav JS (It may Change)--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script> 
+<script>
+    $(function(){
+        $('#menu').slicknav();
+    });
+</script>
+
+
+<script>
+    $(function(){
+        $('#menu').slicknav();
+    });
+</script> 
+
+<!--Scroll--> 
+<script>
+$('a[href*="#"]')
+	// Remove links that don't actually link to anything
+	.not('[href="#"]')
+	.not('[href="#0"]')
+	.click(function (event) {
+		// On-page links
+		if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+			location.hostname == this.hostname
+		) {
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000, function () {
+					// Callback after animation
+					// Must change focus!
+					var $target = $(target);
+					$target.focus();
+					if ($target.is(":focus")) { // Checking if the target was focused
+						return false;
+					} else {
+						$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+						$target.focus(); // Set focus again
+					};
+				});
+			}
+		}
+	});
+ </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Team UNI</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+<!--Skeleton CSS-->
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+<!--SlickNav CSS
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"> 
+-->
+
+<!--Scroll-->
+<link rel="stylesheet" href="scroll.css">
+
+<!--Our CSS-->
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="joe.css">
+<!--Put your CSS Here-->
+
+</head>
+
+<body>
+<div class="header" id="header">
+  <nav class="navbar">
+    <ul id="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../bre/animation.html">Animation</a></li>
+      <li><a href="../don/api.html">API</a></li>
+      <li><a href="../mic/audvid.html">Audio/Video</a></li>
+      <li><a href="../cec/canvas2.html">Canvas</a></li>
+      <li><a href="../ref/ref.html">References</a></li>
+    </ul>
+  </nav>
+  <div class="container title smlogo"> <img src="joseph_logo.png" alt="Logo"/>
+    <h1>UNI</h1>
+    <h3>Where unified code meets unique design</h3>
+  </div>
+  
+  <! -------------- scroll down 1-------------- !>
+  <div class="contain"> <a class="jumper" href="#example">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    </a> </div>
+  <! -------------- scroll down 1-------------- !>
+  
+  <div class="info">
+    <div class="container" id="info">
+      <h2>Semantics</h2>
+      <p>Semantics might not be as flashy as other features provided with HTML5, but it is one of the most powerful. These additional semantic elements allow for the browser to better understand the content being provided. With more structural hierarchy, stronger SEO(Search Engine Optimization) and accessibility to users with disabilities, are some of its many benefits.</p>
+    </div>
+  </div>
+</div>
+<div class="example" id="example">
+  <div class="container">
+    <h2>HTML5 Cheat Sheet</h2>
+    <h3>Learn how to put semantics into action</h3>
+    <img src="htmlinfo_p.jpg" alt="HTMLinfograph"> <a href="htmlinfo.jpg" download="htmlinfo">Download the guide</a> </div>
+  <! -------------- scroll down 2-------------- !>
+  <div class="contain"> <a class="jumper" href="#interactive">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    </a> </div>
+  <! -------------- scroll down 2-------------- !> 
+</div>
+<div class="interactive" id="interactive">
+  <div class="container">
+    <h2>CSS3 Cheat Sheet</h2>
+    <h3>Learn more about the Grid System</h3>
+    <img src="cssinfo_p.jpg" alt="CSSinfograph"> <a href="cssinfo.jpg" download="cssinfo">Download the guide</a> </div>
+  <! -------------- Top scroll -------------- !>
+  <div class="contain3"> <a class="jumper" href="#header">
+    <div class="back">BACK TO TOP</div>
+    </a> </div>
+  <! -------------- Top scroll -------------- !> 
+</div>
+<div class="footer" id="footer">
+  <div class="container">
+    <p>Copyright &#64; 2017 UNI TEAM</p>
+  </div>
+</div>
+
+<!--JQuery JS--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+<!--SlickNav JS (It may Change)--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script> 
+<script>
+    $(function(){
+        $('#menu').slicknav();
+    });
+</script> 
+
+<!--Scroll--> 
+<script>
+$('a[href*="#"]')
+	// Remove links that don't actually link to anything
+	.not('[href="#"]')
+	.not('[href="#0"]')
+	.click(function (event) {
+		// On-page links
+		if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+			location.hostname == this.hostname
+		) {
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000, function () {
+					// Callback after animation
+					// Must change focus!
+					var $target = $(target);
+					$target.focus();
+					if ($target.is(":focus")) { // Checking if the target was focused
+						return false;
+					} else {
+						$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+						$target.focus(); // Set focus again
+					};
+				});
+			}
+		}
+	});
+ </script>
+</body>
+</html>
