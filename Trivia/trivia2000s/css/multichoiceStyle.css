@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS DOcument */
+
+body{
+	background-image: url(../img/theater.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+}
+img {
+	margin-left: 25px;
+	margin-bottom: 25px;
+	border:5px solid black ;
+	}
+
+.button {
+	border: 3px solid;
+	border-radius: 5px;
+	width: 60px;
+	text-align: center;
+	padding-right: 15px;
+	position: relative;
+	float: right;
+	background-color: #DCDCDC;
+	color: black;
+	margin: 510px 2px 0 2px;
+}
+
+.button.active {
+    background-color: #F8F8FF;
+    color: #525252;
+	
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+ul {
+	letter-spacing: 2px;
+	font-size: 1.8em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+ul li{
+	//margin: 0 0 0 5%;
+}
+
+#prev {
+    display:none;
+}
+
+#start {
+    display:none;
+    width: 90px;
+}
+/* ERIC ADDED - next game is the css for the next trivia game buttona */
+#nextGame{
+	display:none;
+	width: 140px;
+}
+h2{
+	font-size: 3.5em;
+}

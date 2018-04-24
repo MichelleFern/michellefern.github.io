@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*  Movie Trivia Game Main CSS */
+/* CSS Document */
+body{
+	background-image: url(../img/theater.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1200px;
+}
+button{
+	border: 5px solid black;
+	height: 25%;
+	font-size: 2.5em;
+	border-radius: 10px;
+	background-color: #FF3113;
+	-webkit-box-shadow: 3px 5px 13px #FFFFFF;
+	box-shadow: 3px 5px 13px #FFFFFF;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/*
+OLD VERSION DEPRICATED ON FINAL DAY
+@charset "UTF-8";
+Movie Trivia Game Main CSS 
+CSS Document 
+
+button{
+	border: 10px solid #25219A;
+	font-size: 2em;
+	border-radius: 10px ;
+	background-color: aquamarine;
+}
+*/
