@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page-wrapper #zen-summary {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  position: fixed;
+  margin-left: 75.4%;
+  margin-top: 25.8%;
+}
+
+.page-wrapper #zen-summary:hover {
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  background-image:url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background: cover;
+}
+
+.intro header h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  font-size: 40px;
+}
+
+.intro header h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-wrapper #zen-intro #zen-preamble {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  position:fixed;
+  margin-left: 31.3%;
+  margin-top: 30.8%;
+}
+
+.page-wrapper #zen-intro #zen-preamble:hover {
+  width: 380px;
+  height: 380px;
+}
+
+.page-wrapper #zen-supporting #zen-explanation {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  position: absolute;
+  margin-left: 72.1%;
+  margin-top: .1%;
+}
+
+.page-wrapper #zen-supporting #zen-explanation:hover {
+  width: 300px;
+  height: 400px;
+}
+
+.page-wrapper #zen-participation {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  margin-left: 23.8%;
+  margin-top: 28.2%;
+}
+
+.page-wrapper #zen-participation:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.page-wrapper #zen-benefits {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  position: absolute;
+  margin-left: 27.6%;
+  margin-top: 1.7%;
+}
+
+.page-wrapper #zen-benefits:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.page-wrapper #zen-requirements {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  margin-left: 26.4%;
+  margin-top: 5%;
+
+}
+
+.page-wrapper #zen-requirements:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.page-wrapper .sidebar {
+  width: 16px;
+  height: 16px;
+  background: #C4DC6C;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s;
+  -ms-transition: width 2s, height 2s;
+  -o-transition: width 2s, height 2s;
+  transition: width 2s, height 2s;
+  overflow: hidden;
+  position:fixed;
+  margin-left: 72.2%;
+  margin-top: 2%;
+}
+
+.page-wrapper .sidebar:hover {
+  width: 300px;
+  height: 600px;
+}
+
+footer {
+  margin-top: 50%;
+}
