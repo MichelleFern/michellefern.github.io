@@ -43,8 +43,8 @@ ul li a {
 	list-syle: none;
 }
 nav {
-	border-top: #FF8B00 solid 3px;
-	border-bottom: #FF8B00 solid 3px;
+	/*border-top: #FF8B00 solid 7px;*/
+	border-bottom: #FF8B00 solid 5px;
 	padding: 10px;
 	font-size: 25px;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
