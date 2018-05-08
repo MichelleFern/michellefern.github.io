@@ -4,7 +4,7 @@
 
 function runWinnerGraphics(){
 	"use strict";
-	alert("Your Super ROCK \n Yout Beet the Entire Game \n Click Ok to start Again!!!!!");
+	alert("Your Super ROCK \n Yout Beat the Entire Game \n Click Ok to start Again!!!!!");
 	sessionStorage.setItem('unlockLevel', '1');
 }
 
