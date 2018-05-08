@@ -15,7 +15,7 @@ h1 {
 	text-indent: -3000px;
 	font-size: 1px;
 	max-height: 1px;
-	margin-top: -10px;
+	margin-top: -20px;
 }
 
 /* Header */
@@ -43,9 +43,11 @@ ul li a {
 	list-syle: none;
 }
 nav {
-	/*border-top: #FF8B00 solid 7px;*/
+	/*border-top: #FF8B00 solid 7px;*/ /*removed top line of Clarissa's design*/
 	border-bottom: #FF8B00 solid 5px;
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
 	font-size: 25px;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-weight: bold;
@@ -139,6 +141,8 @@ header .profileLogo .logoPlaceholder {
 }
 header .profileLogo .logoPlaceholder img {
 	clear: float;
+	padding-top: 40px;
+	margin-bottom: -40px;
 }
 
 header .logoPlaceholder span {
@@ -185,6 +189,7 @@ header .profileHeader p {
 	font-weight: 400;
 	line-height: 1.8;
 	overflow-y: auto;
+	margin-bottom: -25px;
 }
 
 /*.mainContent .profileHeader p {
