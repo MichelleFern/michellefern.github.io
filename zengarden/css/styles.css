@@ -2,8 +2,8 @@
 /* CSS Document */
 
 .page-wrapper #zen-summary {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
@@ -50,8 +50,8 @@ body {
 }
 
 .page-wrapper #zen-intro #zen-preamble {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
@@ -80,8 +80,8 @@ body {
 }
 
 .page-wrapper #zen-supporting #zen-explanation {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
@@ -110,8 +110,8 @@ body {
 }
 
 .page-wrapper #zen-participation {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
@@ -139,8 +139,8 @@ body {
 }
 
 .page-wrapper #zen-benefits {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
@@ -169,8 +169,8 @@ body {
 }
 
 .page-wrapper #zen-requirements {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
@@ -199,8 +199,8 @@ body {
 }
 
 .page-wrapper .sidebar {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #C4DC6C;
   -webkit-transition: width 2s, height 2s;
   -moz-transition: width 2s, height 2s;
