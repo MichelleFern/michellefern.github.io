@@ -26,7 +26,7 @@ html
 .page-wrapper #zen-summary
 {
     width: 12px;
-    height: 12px;
+    height: 9px;
     background: #C4DC6C;
     -webkit-transition: width 2s, height 2s;
     -moz-transition: width 2s, height 2s;
@@ -46,7 +46,7 @@ html
     overflow: hidden;
     position: absolute;
     margin-left: 65.5%;
-    margin-top: 33.9%;
+    margin-top: 34.3%;
 }
 
 .page-wrapper #zen-summary:hover
