@@ -186,7 +186,7 @@ $("#nextGame").on("click", function (e) {
     }
     
     score.append("You got " + numCorrect + " questions out of " +
-                 questions.length + " right!!!");
+                 questions.length + " right!!! - Designed by Michelle Fern");
     return score;
   }
 })();

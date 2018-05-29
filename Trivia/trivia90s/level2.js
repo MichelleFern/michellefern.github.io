@@ -146,7 +146,7 @@ function counterChecker(){
 	"use strict";
 	counter++;
 	if(counter >= 10){
-		alert("you have won! We will miss the best decade!");
+		alert("you have won! We will miss the best decade! - Designed by Clarissa Ray");
 		counter = 0;
 		sessionStorage.setItem('unlockLevel', '3');
 		location.href = "../mainPageIndex.html";

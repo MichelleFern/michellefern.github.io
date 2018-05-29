@@ -461,7 +461,7 @@ function numOfCorrectAnswerLoader(){
 	var loadCorrectAnswer = document.getElementById("numberOfCorrect");
 	loadCorrectAnswer.value = correctCounter;
 	if (correctCounter === 3){
-		alert("Great Job! \nYou must be getting pretty OLD! \nHave you thought about Life Insurance lately? \nCall Eric @ (702) 867-5309" );
+		alert("Great Job! \nYou must be getting pretty OLD! \nHave you thought about Life Insurance lately? \nCall Eric @ (702) 867-5309 - Designed by Eric Dunn" );
 		sessionStorage.setItem('unlockLevel', '4');
 		location.href = "mainPageIndex.html";
 	}
