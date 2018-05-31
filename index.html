@@ -1,59 +1,136 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8">
-    <title>MichelleFern.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Michelle Fern</title>
+	<meta name="author" content="Michelle Fern" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
 
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css">	
+	
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
 
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
 
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
+	<script type="text/javascript" src="js/fullpage.scrollHorizontally.limited.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myContainer').fullpage({
+<!--			sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],-->
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+			menu: '#menu',
+			slidesNavigation: true,
+			scrollHorizontally: true,
+			scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX01mU2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NVNRcg==',
+			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+				console.log("slideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
 
-        @media only screen and (max-width: 280px) {
+			},
+			onSlideLeave: function(anchorLink, index, slideIndex, direction){
+				console.log("----------------");
+				console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+			}
+		});
+	});
+	</script>
 
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
 </head>
 <body>
-    <h1>Michelle Fern</h1>
+
+<!--    alternate menu style    -->
+
+<!--<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>-->
+
+<!--<ul class="preview-extensions-menu">
+	<li class="preview-more-extensions"><a href="http://alvarotrigo.com/fullPage/extensions/">More extensions</a></li>
+	<li class="preview-buy-extension"><a href="https://gum.co/fullpageScrollHorizontally">Download extension</a></li>
+</ul>-->
+
+<div id="myContainer">
+
+	<div class="section">
+		<div class="slide">
+			<di class="intro">
+				<h1>Follow the owls...</h1>
+				
+			</di>
+		</div>
+		<div class="slide"><a href="webstandards/index.html"><img src="img/webowl.png" alt="webstandards"/></a></div>
+		<div class="slide"><h1>Slide 1.3</h1></div>
+	</div>
+	<div class="section"><h1>Section 2</h1></div>
+	<div class="section">
+		<div class="slide"><h1>Section 3</h1></div>
+		<div class="slide"><h1>Slide 3.2</h1></div>
+		<div class="slide"><h1>Slide 3.3</h1></div>
+		<div class="slide"><h1>Slide 3.4</h1></div>
+	</div>
+	<div class="section"><h1>Section 4</h1></div>
+</div>
+
+<input type="hidden" id="_4" value="3" />
+<nav class="navbar">
+		<ul id="menu">
+    		<li><a href="webstandards/index.html">Web Standards</a></li>
+    		<li><a href="zengarden/index.html">Zen Garden</a></li>
+			<li><a href="bluerockdove/index.html">Blue Rock Dove</a></li>
+			<li><a href="Trivia/mainPageIndex.html">Trivia</a></li>
+			<li><a href="animate/index.html">Adobe Animate</a></li>
+			<li><a href="">About Me</a></li>
+		</ul>
+	</nav>
+        
+
+<div class="flex-container">
+		<div class="flex-box web">
+		  <a href="webstandards/index.html"><img src="img/webowl.png" alt="webstandards"/></a>
+	   	</div>
+		<div class="flex-box triv">
+   			<a href="Trivia/mainPageIndex.html"><img src="img/trivowl.png" alt="Triva"/></a>
+
+	   	</div>
+		<div class="flex-box blu">
+   			<a href="bluerockdove/index.html"><img src="img/brdowl.png" alt="BlueRockDove"/></a>
+
+	   	</div>
+		<div class="flex-box zen">
+   			<a href="zengarden/index.html"><img src="img/zenowl.png" alt="ZenGarden"/></a>
+
+	   	</div>
+	   	<div class="flex-box ani">
+   			<a href="animate/index.html"><img src="img/aaowl.png" alt="AdobeAnimate"/></a>
+
+	   	</div>
+		<div class="flex-box about">
+   			<a href="#"><img src="#" alt="AboutMe"/></a>
+
+	   	</div>	
+		</div>
+        <!--SlickNav JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<script>
+    $(function(){
+        $('#menu').slicknav();
+    });
+</script>
 </body>
 </html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

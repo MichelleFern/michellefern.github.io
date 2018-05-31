@@ -148,40 +148,6 @@ body
 	padding-right: 6px;
 }
 
-.page-wrapper #zen-participation
-{
-    width: 13px;
-    height: 10px;
-    background: #C4DC6C;
-    -webkit-transition: width 2s, height 2s;
-    -moz-transition: width 2s, height 2s;
-    -ms-transition: width 2s, height 2s;
-    -o-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
-    transition-delay: 1s;
-    -webkit-transition: width 2s, height 2s;
-    -moz-transition: width 2s, height 2s;
-    -ms-transition: width 2s, height 2s;
-    -o-transition: width 2s, height 2s;
-    transition: width 2s, height 2s;
-    overflow: hidden;
-    margin-left: 26.7%;
-    margin-top: 54.4%;
-}
-
-.page-wrapper #zen-participation:hover
-{
-    width: 700px;
-    height: 200px;
-	padding: 6px;
-	font-size: 12px;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-}
-
 .page-wrapper #zen-benefits
 {
     width: 13px;
@@ -286,3 +252,48 @@ body
 }
 
 footer { margin-top: 50%; }
+
+
+.page-wrapper #zen-participation {
+    width: 13px;
+    height: 10px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    margin-left: 26.7%;
+    margin-top: 54.4%;
+}
+
+.page-wrapper #zen-participation:hover {
+    width: 700px;
+    height: 200px;
+	padding: 6px;
+	font-size: 12px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#zen-participation:hover ~ #zen-requirements { 
+	display: none; 
+}
+
+#zen-participation:hover ~ #zen-benefits { 
+	display: none; 
+}
+
+#zen-participation:hover ~ .sidebar { 
+	display: none; 
+}
