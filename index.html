@@ -50,64 +50,63 @@
 
 </head>
 <body>
-
-<nav class="navbar">
-		<ul id="menu">
-    		<li><a href="webstandards/index.html">Web Standards</a></li>
-    		<li><a href="zengarden/index.html">Zen Garden</a></li>
-			<li><a href="bluerockdove/index.html">Blue Rock Dove</a></li>
-			<li><a href="Trivia/mainPageIndex.html">Trivia</a></li>
-			<li><a href="animate/index.html">Adobe Animate</a></li>
-			<li><a href="">About Me</a></li>
-		</ul>
-	</nav>
-
-<!--    alternate menu style    -->
-
-<!--<ul id="menu">
+<div class="container">
+  <nav class="navbar">
+    <ul id="menu">
+      <li><a href="webstandards/index.html">Web Standards</a></li>
+      <li><a href="zengarden/index.html">Zen Garden</a></li>
+      <li><a href="bluerockdove/index.html">Blue Rock Dove</a></li>
+      <li><a href="Trivia/mainPageIndex.html">Trivia</a></li>
+      <li><a href="animate/index.html">Adobe Animate</a></li>
+      <li><a href="">About Me</a></li>
+      </ul>
+    </nav>
+  
+  <!--    alternate menu style    -->
+  
+  <!--<ul id="menu">
 	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
 	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
 	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
 	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
 </ul>-->
-
-<!--<ul class="preview-extensions-menu">
+  
+  <!--<ul class="preview-extensions-menu">
 	<li class="preview-more-extensions"><a href="http://alvarotrigo.com/fullPage/extensions/">More extensions</a></li>
 	<li class="preview-buy-extension"><a href="https://gum.co/fullpageScrollHorizontally">Download extension</a></li>
 </ul>-->
+  
+  <div id="myContainer">
+    
+    <div class="section">
+      <div class="slide">
+        <di class="intro">
+          <h1>Follow the owls...</h1>
+          
+          </di>
+        </div>
+      <div class="slide"><img src="img/webowl.png" alt="webstandards owl" class="first"/></div>
+      <div class="slide"><img src="img/trivowl.png" alt="trivia owl"/></div>
+      <div class="slide"><img src="img/brdowl.png" alt="blue rock owl"/></div>
+      <div class="slide"><img src="img/zenowl.png" alt="zen garden owl"/></div>
+      <div class="slide"><img src="img/aaowl.png" alt="animate owl"/></div>
+      </div>
+    <div class="section"><h1>Section 2</h1></div>
+    <div class="section">
+      <div class="slide"><h1>Section 3</h1></div>
+      <div class="slide"><h1>Slide 3.2</h1></div>
+      <div class="slide"><h1>Slide 3.3</h1></div>
+      <div class="slide"><h1>Slide 3.4</h1></div>
+      </div>
+    <div class="section"><h1>Section 4</h1></div>
+  </div>
+  
+  <input type="hidden" id="_4" value="3" />
+  
 
-<div id="myContainer">
-
-	<div class="section">
-		<div class="slide">
-			<di class="intro">
-				<h1>Follow the owls...</h1>
-				
-			</di>
-		</div>
-		<div class="slide"><img src="img/webowl.png" alt="webstandards owl"/></div>
-		<div class="slide"><img src="img/trivowl.png" alt="trivia owl"/></div>
-        <div class="slide"><img src="img/brdowl.png" alt="blue rock owl"/></div>
-        <div class="slide"><img src="img/zenowl.png" alt="zen garden owl"/></div>
-        <div class="slide"><img src="img/aaowl.png" alt="animate owl"/></div>
-	</div>
-	<div class="section"><h1>Section 2</h1></div>
-	<div class="section">
-		<div class="slide"><h1>Section 3</h1></div>
-		<div class="slide"><h1>Slide 3.2</h1></div>
-		<div class="slide"><h1>Slide 3.3</h1></div>
-		<div class="slide"><h1>Slide 3.4</h1></div>
-	</div>
-	<div class="section"><h1>Section 4</h1></div>
-</div>
-
-<input type="hidden" id="_4" value="3" />
-
-        
-
-
-        <!--SlickNav JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+  
+  <!--SlickNav JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script> </div>
 <script>
     $(function(){
         $('#menu').slicknav();
