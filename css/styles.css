@@ -10,13 +10,13 @@ body {
 	}
 
 /*   Owl Positioning  */
-/*.fp-tableCell {
+.fp-tableCell {
 	display: table-cell;
 	position: relative;
-	top: 120px;
+	top: -90px;
 	width: 100%;
 	height: 100%;
-}*/
+}
 
 .home {
 	width: 100%;
