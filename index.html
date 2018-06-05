@@ -7,12 +7,10 @@
 	<meta name="author" content="Michelle Fern" />
 	<meta name="description" content="" />
 	<meta name="keywords"  content="" />
-<link href="css/nav.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/examples.css" />
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	
 
 	<!--[if IE]>
@@ -20,19 +18,17 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
-    
-<!--JQuery JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
 
-	<script type="text/javascript" src="js/fullpage.scrollHorizontally.limited.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="file:///C|/Users/mfkalus/Desktop/Michelle4/sharon/js/jquery.easings.min.js"></script>
+
+	<script type="text/javascript" src="file:///C|/Users/mfkalus/Desktop/Michelle4/sharon/js/fullpage.scrollHorizontally.limited.min.js"></script>
+	<script type="text/javascript" src="file:///C|/Users/mfkalus/Desktop/Michelle4/sharon/js/jquery.fullpage.extensions.min.js"></script>
 
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$('#myContainer').fullpage({
-<!--			sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],-->
+			<!--sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc']-->,
 			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
 			menu: '#menu',
 			slidesNavigation: true,
@@ -52,72 +48,46 @@
 
 </head>
 <body>
-<div class="container">
-<div class="topnav" id="myTopnav">
-  <a href="#home" ></a>
-  <a href="webstandards/index.html">Web Standards</a>
-  <a href="zengarden/index.html">Zen Garden</a>
-  <a href="bluerockdove/index.html">Blue Rock Dove</a>
-  <a href="Trivia/mainPageIndex.html">Trivia</a>
-  <a href="animate/index.html">Adobe Animate</a>
-  <a href="">About Me</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-  
-  <!--    alternate menu style    -->
-  
-  <!--<ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Projects</a></li>
 	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
-</ul>-->
-  
-  <!--<ul class="preview-extensions-menu">
+</ul>
+
+<!--<ul class="preview-extensions-menu">
 	<li class="preview-more-extensions"><a href="http://alvarotrigo.com/fullPage/extensions/">More extensions</a></li>
 	<li class="preview-buy-extension"><a href="https://gum.co/fullpageScrollHorizontally">Download extension</a></li>
 </ul>-->
-  
-  <div id="myContainer">
+
+<div id="myContainer">
     
     <div class="section">
-      <div class="slide">
+      <div class="slide home">
         <di class="intro">
           <h1>Follow the owls...</h1>
           
-          </di>
-        </div>
+        </di>
+      </div>
       <div class="slide"><img src="img/webowl.png" alt="webstandards owl" class="first"/></div>
       <div class="slide"><img src="img/trivowl.png" alt="trivia owl"/></div>
       <div class="slide"><img src="img/brdowl.png" alt="blue rock owl"/></div>
       <div class="slide"><img src="img/zenowl.png" alt="zen garden owl"/></div>
       <div class="slide"><img src="img/aaowl.png" alt="animate owl"/></div>
-      </div>
-    <div class="section"><h1>Section 2</h1></div>
+    </div>
+    <div class="section"><h1>About Me</h1></div>
     <div class="section">
-      <div class="slide"><h1>Section 3</h1></div>
-      <div class="slide"><h1>Slide 3.2</h1></div>
-      <div class="slide"><h1>Slide 3.3</h1></div>
-      <div class="slide"><h1>Slide 3.4</h1></div>
-      </div>
+      <div class="slide"><h1>Web Standards</h1></div>
+      <div class="slide"><h1>Trivia</h1></div>
+      <div class="slide"><h1>Blue Rock Dove</h1></div>
+      <div class="slide"><h1>Zen Garden</h1></div>
+      <div class="slide"><h1>Adobe Animate</h1></div>
+    </div>
     <div class="section"><h1>Section 4</h1></div>
   </div>
-  
-  <input type="hidden" id="_4" value="3" />
-  
 
-  
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+<input type="hidden" id="_4" value="3" />
+
 </body>
 </html>
