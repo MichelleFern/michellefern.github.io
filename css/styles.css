@@ -80,5 +80,24 @@ body {
 	position: relative;
 }
 
+.trivia img {
+	margin-top: 150px;
+	position: relative;	
+}
 
+.brd img {
+	margin-top: 170px;
+	margin-left: -180px;
+	postion: relative;
+}
 
+.zen img{
+	margin-top: 200px;
+	position: relative;
+}
+
+.aa img {
+	margin-top: 280px;
+	margin-left: 380px;
+	postion: relative;
+}
