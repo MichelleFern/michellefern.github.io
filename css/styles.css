@@ -24,9 +24,6 @@ body {
 	position: relative;
 	background-image: url(../img/tree.png);
 	background-repeat: no-repeat;
-}
-
-.home {
 	background-size: cover;
 }
 
@@ -80,7 +77,10 @@ body {
 
 
 
-
+.web img {
+	margin-top: 85px;
+	position: relative;
+}
 
 
 
