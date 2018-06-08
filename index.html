@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/grids.css" rel="stylesheet" type="text/css">
 	
 
 	<!--[if IE]>
@@ -26,8 +27,9 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 
 	<script type="text/javascript">
-
-	$(document).ready(function() {
+	
+	<!--   Fullpage Horizontal Scroll    -->
+$(document).ready(function() {
 		$('#myContainer').fullpage({
 			<!--sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc']-->,
 			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
@@ -45,10 +47,34 @@
 			}
 		});
 	});
-	</script>
+	
+	
+	<!--    Swap image scripts    -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
 
 </head>
-<body>
+<body onLoad="MM_preloadImages('webstandards/mic/img/fox2.png')">
 
 <ul id="menu">
 	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
@@ -79,7 +105,39 @@
     </div>
     <div class="section"><h1>About Me</h1></div>
     <div class="section">
-      <div class="slide"><h1>Web Standards</h1></div>
+      <div class="slide"><div class="grid-container">
+  <div class="item1"><h2>Class: GWDA236 Web Standards
+</h2><p>Assignment: Group project - create a website that showcases html5 and CSS3</p></div>
+  <div class="item2"><img src="webstandards/images/uniUp.png" alt="Uni Logo"/></div>
+  <div class="item3"><h2>Team:</h2>
+<p>Michelle Fern: Audio/Video - Team Lead</p>
+<p>Joseph Linares: Semantics</p>
+<p>Briana Armenta: Animation</p>
+<p>Cecil Baxter: Canvas</p>
+<p>Donovan Carmichael: API</p>
+<p>Garry Medina: Canvas</p></div>  
+  <div class="item4"><img src="img/webcolor.png" alt="color palate"/></div>
+  <div class="item5"><p>Sample Code - hover over the fox!</p><p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Fox','','webstandards/mic/img/fox2.png',1)"><img src="webstandards/mic/img/fox.png" alt="Fox" id="Fox"><audio id="sound-two" preload="auto">
+          <source src="webstandards/mic/media/fox.mp3"></source>
+          <source src="webstandards/mic/media/fox.ogg"></source>
+          Your browser doesn't like super fun audio time. </audio></a></p><p><img src="img/foxcode.png" alt="html code for fox"/></p></div>
+  <div class="item6"><h2>Challenges:  This was my first assignment
+as a team lead and keeping everyone on track
+and on the same page while we were juggling 
+other assignments was definitely the most difficult 
+part.   Once everyone had fully bought into the 
+concept though, it was much easier to stay on target.</h2></div>
+  <div class="item7"><h2>Highlights:  From day one I was very excited about
+this assignment.  I had not done anything with audio
+or video before so I was thrilled to have an excuse 
+to lresearch it.  I am especially proud of the interactive
+portion of my page - hover changes over images are
+my new favorite way to spice up a page!</h2></div>
+  <div class="item8"><a href="webstandards/index.html" target="new"><img src="img/webowl.png" alt="web standards owl"/></a><a href="webstandards/mic/audvid.html" target="new"><img src="img/webowl.png" alt="web standards owl"/></a></div>  
+</div>
+      
+      
+      </div>
       <div class="slide"><h1>Trivia</h1></div>
       <div class="slide"><h1>Blue Rock Dove</h1></div>
       <div class="slide"><h1>Zen Garden</h1></div>
@@ -89,6 +147,20 @@
   </div>
 
 <input type="hidden" id="_4" value="3" />
+
+
+
+
+<!-- JS for fox sound --> 
+<script> 	
+var soundTwo = $("#sound-two")[0];
+$(".item5")
+	.mouseenter(function() {
+		soundTwo.play();
+	});
+		
+	</script>
+
 
 </body>
 </html>
