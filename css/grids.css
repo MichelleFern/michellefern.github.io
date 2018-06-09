@@ -4,6 +4,7 @@
   grid-gap: 10px;
 /*  background-color: #2196F3;*/
   padding: 10px;
+  margin-top: 4%;
 }
 .grid-container > div {
 /*  background-color: rgba(255, 255, 255, 0.8);*/
@@ -49,21 +50,20 @@
 .grid-container .item8 img {
 	padding-right: 10%;
 	padding-left: 10%;
-	height: 5%;
-	width: 5%;
+	margin-top: -20px;
 }
 
 #Fox {
-	height: 10%;
-	width: 10%;
+	height: 18%;
+	width: 18%;
 }
 
 .item5 p {
-	font-size: 50%;
+	font-size: 55%;
 }
 
 .item5 {
-	border: thin solid hsla(0,0%,2%,1.00);
+	border: medium solid hsla(0,0%,2%,1.00);
 }
 
 .item6 h2 {
@@ -77,11 +77,11 @@
 }
 
 .item3 p {
-	font-size: 60%;
+	font-size: 55%;
 }
 
 .item3 h2 {
-	font-size: 70%;
+	font-size: 65%;
 }
 
 .item1 p{
@@ -90,5 +90,10 @@
 
 .item1 h2{
 	font-size: 90%;
+}
+
+.webcode {
+	padding-top: 2%;
+
 }
 
