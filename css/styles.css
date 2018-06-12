@@ -101,3 +101,12 @@ body {
 	margin-left: 380px;
 	postion: relative;
 }
+
+.aboutme {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/abouttree.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
