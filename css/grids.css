@@ -71,9 +71,23 @@
 	text-align: left;	
 }
 
+.item6 p{
+	font-size: 55%;
+	text-align: left;
+	color: black;
+	padding: 2%;	
+}
+
 .item7 h2 {
 	font-size: 55%;
 	text-align: left;	
+}
+
+.item7 p {
+	font-size: 55%;
+	text-align: left;
+	color: black;
+	padding-top: 2%;	
 }
 
 .item3 p {
@@ -97,3 +111,49 @@
 
 }
 
+.item6 .brdslide {
+	padding-top: 12%;	
+}
+
+.item7 .brdslide {
+	padding-top: 12%;	
+}
+
+.trivimg {
+	padding-top: 5%;
+	padding-bottom: 5%;	
+}
+
+#zen-summary
+{
+    width: 12px;
+    height: 9px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -15%;
+}
+
+#zen-summary:hover
+{
+    width: 220px;
+    height: 500px;
+	padding-left: 6px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
