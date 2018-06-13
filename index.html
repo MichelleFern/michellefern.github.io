@@ -245,7 +245,7 @@ created in Animate and then refined in Illustrator.
 </div></div>
 </div>
     
-    <div class="section"><h1>Section 4</h1></div>
+    <div class="section"><h1>Contact Me</h1></div>
   </div>
 
 <input type="hidden" id="_4" value="3" />
@@ -263,7 +263,18 @@ $(".item5")
 		
 	</script>
     
-    <!--  Animates buttons on hover  -->
+    
+<!--    Animates buttons on hover   -->
+    <script>
+  $(".button").on("mouseenter", function () {
+    $(this).addClass("active");
+  });
+  $(".button").on("mouseleave", function () {
+    $(this).removeClass("active");
+  });
+  </script>
+    
+
 
 <script src="Trivia/trivia2000s/js/multichoiceIndex.js" language="javascript" type="text/javascript"></script>
 </body>
