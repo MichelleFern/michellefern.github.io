@@ -146,8 +146,8 @@
     transition: width 2s, height 2s;
     overflow: hidden;
     position: absolute;
-    margin-left: 5%;
-    margin-top: 20%;
+    margin-left: 10%;
+    margin-top: -10%;
 }
 
 #zen-summary:hover
@@ -234,4 +234,5 @@
 
 #michelle {
 	font-size: 50px;
+	margin-top: 10%;
 }
