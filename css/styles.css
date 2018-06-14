@@ -119,3 +119,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+
+.resume {
+	float: left;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+.res {
+	margin-right: 20%;
+}
