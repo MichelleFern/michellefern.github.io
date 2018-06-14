@@ -1,6 +1,15 @@
 body {
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.title {
+	font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	text-align: center;	
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
 .grid-container2 {
   display: grid;
   grid-template-columns: auto auto auto;
