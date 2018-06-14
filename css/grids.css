@@ -150,6 +150,7 @@
     margin-top: -9%;
 }
 
+
 #zen-summary:hover
 {
     width: 220px;
@@ -158,6 +159,9 @@
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
+#zen {
+	margin-top: 1%;
+}
 
 
 /*   Grid placement within container About Me  */
