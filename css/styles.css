@@ -125,11 +125,21 @@ body {
 	background-size: cover;
 }
 
+#res {
+		width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/resumetree.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
 
 .resume {
 	float: left;
 	margin-left: 2%;
 	margin-top: 5%;
+
 }
 
 .res {
