@@ -238,7 +238,7 @@
 
 #michelle {
 	font-size: 50px;
-	margin-top: 10%;
+	margin-top: 10%;	
 }
 
 .zenimg {
@@ -258,3 +258,8 @@
 .item61 img {
 	margin-left: 10%;
 }
+
+.item21 {
+	margin-right: 10%;
+	margin-left: 10%;
+	}
