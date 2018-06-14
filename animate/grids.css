@@ -6,8 +6,8 @@ body {
 	font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 80px;
 	text-align: center;	
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .grid-container2 {
@@ -57,22 +57,3 @@ body {
   grid-row: 3;
 }	
 
-.item12 {
-	border-width: thick;
-	border-style: solid;
-}
-
-.item22 {
-	border-width: thick;
-	border-style: solid;
-}
-
-.item52 {
-	border-width: thick;
-	border-style: solid;
-}
-
-.item62 {
-	border-width: thick;
-	border-style: solid;
-}
