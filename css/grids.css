@@ -191,3 +191,47 @@
   grid-column: 1 / span 3;
   grid-row: 5;
 }
+
+/*  About Me Grids  */
+
+.grid-containers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-containers > div {
+
+  text-align: center;
+  padding: 20px 0;
+  font-size: 10px;
+}
+
+/*   Grid placement within container About Me  */
+
+
+
+.item21 {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.item21 p {
+	margin-top: 5%;
+}
+
+.item21 h1 {
+	font-size: 30px;
+	margin-top: 5%;
+}
+
+.item11 {
+	margin-top: 2%;
+}
+
+#michelle {
+	font-size: 50px;
+}
