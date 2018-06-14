@@ -97,8 +97,8 @@ body {
 }
 
 .aa img {
-	margin-top: 380px;
-	margin-left: 98px;
+	margin-top: 330px;
+	margin-left: 70px;
 	postion: relative;
 }
 
@@ -146,6 +146,6 @@ body {
 	margin-right: 20%;
 }
 
-.project img {
-	margin-top: 2%;
+.slide.project img {
+	margin-top:-10%;
 }
