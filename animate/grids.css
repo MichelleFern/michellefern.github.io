@@ -1,0 +1,59 @@
+body {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.title {
+	font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	text-align: center;	
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+/*  background-color: #2196F3;*/
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container2 > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+.item32 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item42 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.item72 {
+  grid-column: 1;
+  grid-row: 4 
+}
+
+.item82 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.item52 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.item62 {
+  grid-column: 2;
+  grid-row: 3;
+}	
+

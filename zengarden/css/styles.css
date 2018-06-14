@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* sharon's additions */
+html, body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html
+{
+    background-color: hsla(0,0%,0%,1.00);
+/*    background-image: -webkit-linear-gradient(270deg, rgba(14,30,62,1.00) 0%, rgba(15,117,113,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg, rgba(14,30,62,1.00) 0%, rgba(15,117,113,1.00) 100%);
+    background-image: -o-linear-gradient(270deg, rgba(14,30,62,1.00) 0%, rgba(15,117,113,1.00) 100%);
+    background-image: linear-gradient(180deg, rgba(14,30,62,1.00) 0%, rgba(15,117,113,1.00) 100.00%);*/
+    /* [disabled]height: 100%;
+*/
+}
+
+
+/* end sharon's additions */
+.page-wrapper #zen-summary
+{
+    width: 12px;
+    height: 9px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 68.5%;
+    margin-top: 34.7%;
+}
+
+.page-wrapper #zen-summary:hover
+{
+    width: 200px;
+    height: 250px;
+	padding-left: 6px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+body
+{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 960px;
+    margin: auto;
+}
+
+.intro header h1
+{
+    color: #ffffff;
+    text-align: center;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-size: 40px;
+}
+
+.intro header h2
+{
+    color: #ffffff;
+    text-align: center;
+}
+
+.page-wrapper #zen-intro #zen-preamble
+{
+    width: 12px;
+    height: 9px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute; /* from fixed sk */
+    margin-left: 35.4%;
+    margin-top: 34.5%;
+}
+
+.page-wrapper #zen-intro #zen-preamble:hover
+{
+    width: 550px;
+    height: 320px;
+	padding-left: 6px;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+.page-wrapper #zen-supporting #zen-explanation
+{
+    width: 12px;
+    height: 9px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 65.4%;
+    margin-top: .4%;
+}
+
+.page-wrapper #zen-supporting #zen-explanation:hover
+{
+    width: 460px;
+    height: 330px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.page-wrapper #zen-benefits
+{
+    width: 13px;
+    height: 10px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 28.6%;
+    margin-top: -20.5%;
+}
+
+.page-wrapper #zen-benefits:hover
+{
+    width: 300px;
+    height: 250px;
+	padding: 6px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+.page-wrapper #zen-requirements
+{
+    width: 12px;
+    height: 9px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute; /* sk */
+    margin-left: 34%;
+    margin-top: 4.2%;
+}
+
+.page-wrapper #zen-requirements:hover
+{
+    width: 650px;
+    height: 350px;
+	font-size: 12px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-right: 2px;
+	padding-left: 6px;
+}
+
+.page-wrapper .sidebar
+{
+    width: 13px;
+    height: 10px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 73.2%;
+    margin-top: -23.7%;
+}
+
+.page-wrapper .sidebar:hover
+{
+    width: 300px;
+    height: 550px;
+	padding-left: 6px;
+}
+
+footer { margin-top: 50%; }
+
+
+.page-wrapper #zen-participation {
+    width: 13px;
+    height: 10px;
+    background: #C4DC6C;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s;
+    -ms-transition: width 2s, height 2s;
+    -o-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    overflow: hidden;
+    margin-left: 26.7%;
+    margin-top: 54.4%;
+}
+
+.page-wrapper #zen-participation:hover {
+    width: 700px;
+    height: 200px;
+	padding: 6px;
+	font-size: 12px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#zen-participation:hover ~ #zen-requirements { 
+	display: none; 
+}
+
+#zen-participation:hover ~ #zen-benefits { 
+	display: none; 
+}
+
+#zen-participation:hover ~ .sidebar { 
+	display: none; 
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Blue Rock Dove provides home-made hand crafted designer jewelry. Custom pendants, bracelets and necklaces. Gifts for the artisans in Bay Area, and California."> 
+<meta name="keywords" content="Adornments, jewelry, hand crafted, Sandra Abril, Oceanside, Blue Rock Dove">
+<title>Blue Rock Dove Adornments Shop Page</title>
+<script src="paypal-button-minicart.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('add', function (idx, product, isExisting) {
+			if (isExisting) {
+				product.set('quantity', 1);
+				alert('Sorry, you can only have one of those.');
+			}
+		});
+	</script>
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/PageStyle.css" rel="stylesheet" type="text/css">
+
+
+
+ <!---------------- ERIC SCRIPT WORK (BEGIN) /Head --------------------------->
+	 
+<link rel="shortcut icon" href="images/final-logo-30501.PNG" type="image/x-icon">
+
+
+
+	<script type="text/javascript">
+	<!-- THis is your JEWELRY OBJECT skeleton with all its parameters -->
+		function items(picture,price,title,description,type){
+			this.Picture=picture;
+			this.Description=description;
+			this.Price=price;
+			this.Title=title;
+			this.Type=type;
+		}
+		function flexboxes(piclocation, pricelocation, titlelocation, deslocation){
+			this.PicLocation = piclocation;
+			this.Deslocation = deslocation;
+			this.Titlelocation = titlelocation;
+			this.Pricelocation = pricelocation;
+		}
+		
+		<!-- JS function which holds each items and stores it with the flexbox,  so that when you click the button it can advance to the next window and have the data necissary to do so?. -->
+		<!-- OR?? can i give each items its items array number which can then be refrenced to later????
+		
+		<!-- JS-- IMPORTANT-SAVE - product objects are created and maintained here -- (add-to or delete-from) -- this section is where all product objects are maintained  - - SAVE-IMPORTANT ---  />;-->
+		var itemsArray = new Array();
+		 itemsArray[0] = new items("images/necklace/IMG_N1062.jpg",1.95,"FIRE","17 inches - Serpentine, Red Jasper, Camelon","necklace");
+		 itemsArray[1] = new items("images/necklace/IMG_N1064.jpg",2.95,"PRISMATIC ONYX","19 inches - Black Obsidian, Blue/Red/Green Beads","necklace");
+		 itemsArray[2] = new items("images/bracelet/IMG_B1082.jpg",3.95,"MOON","5 inches - Moonstone, Blue/Black/White beads","bracelet");
+		 itemsArray[3] = new items("images/bracelet/IMG_B1087.jpg",4.95,"RUGGED MOUNTAIN","6 inches - Amethyst, Turquois","bracelet");
+		 itemsArray[4] = new items("images/pendant/IMG_P1039.jpg",5.95,"JADE TIGER","17 inches - Blue beads with onyx pebbles","pendant");
+		 itemsArray[5] = new items("images/pendant/IMG_P1041.jpg",6.95,"BUTTERFLY","12 inches - Jade mixed with laced Agate","pendant");
+		 itemsArray[6] = new items("images/pendant/IMG_P1045.jpg",7.95,"JADE TEAR DROP","17 inches - Amazonite, Camelon, and Jade","pendant");
+		 itemsArray[7] = new items("images/necklace/IMG_N1052.jpg",8.95,"FOSSIL","17 inches - Howlit, Amertrine","necklace");
+		 itemsArray[8] = new items("images/necklace/IMG_N1061.jpg",9.95,"TRANQUILITY","15 inches - Lapis Lazuli","necklace");
+		 itemsArray[9] = new items("images/necklace/IMG_N1072.jpg",10.95,"MEDIAN","17 inches - Black Tourmaline","necklace");
+		 itemsArray[10] = new items("images/necklace/IMG_N1079-1.jpg",11.95,"PROGRESIVE PROSPERITY","15 inches - Turquoise","necklace");
+		 itemsArray[11] = new items("images/necklace/IMG_N1080.jpg",12.95,"MELON","16 inches - Chrysoprase","necklace");
+		 itemsArray[12] = new items("images/necklace/IMG_N1083.jpg",13.95,"SUNSET","19 inches - Orange/Dark Blue Beads","necklace");
+		 itemsArray[13] = new items("images/necklace/IMG_N1089.jpg",14.95,"CHROMATIC","17 inches - Flecked colors","necklace");
+		 itemsArray[14] = new items("images/bracelet/IMG_B1068.jpg",15.95,"RAINBOW","6 inches - Camelon, Dark Amethyst, Turquoise","bracelet");
+		 itemsArray[15] = new items("images/bracelet/IMG_B1069.jpg",16.95,"SKELETON","8 inches - Camelon, Dark Amethyst, Turquoise, Serpentine, Black Onyx","bracelet");
+		 itemsArray[16] = new items("images/bracelet/IMG_B1070.jpg",17.95,"YELLOW BUG","6 inches - Serpentine, Tigereye, Purple/Red Beads","bracelet");
+		 itemsArray[17] = new items("images/bracelet/IMG_B1071.jpg",18.95,"SYMMETRY","6 inches - Metal Chainlink, Fluorite","bracelet");
+		 itemsArray[18] = new items("images/bracelet/IMG_B1077.jpg",19.95,"IRIDESCENCE","5 inches - Turquois, Amethyst, Clear Beads","bracelet");
+		 itemsArray[19] = new items("images/pendant/IMG_P1057.jpg",20.95,"BLACK FEATHER","14 inches - Black Onyx, white opal","pendant");
+		 itemsArray[20] = new items("images/pendant/IMG_P1059.jpg",21.95,"CRIMSON","12 inches - Black Onyx, Red Jasper","pendant");
+		 itemsArray[21] = new items("images/pendant/IMG_P1075c.jpg",22.95,"BLACK BADGE","19 inches - Black Obsidian, White Opal","pendant");
+		 
+			
+		<!--JS Function which dynaically loads each flexbox Item with individual produts / with individual id attributes - non working button. -- loads from for loop />;-->
+		function loadFlexboxWithItems(counter,item,PicLocation,Titlelocation,Deslocation,Pricelocation){
+		
+			<!--JS which creates the adds image into flexbox ITEMs and adds a picture with attributes />;-->
+			//function createImage(item) {			
+				var x = document.createElement("IMG");
+				x.setAttribute("src", item.Picture);
+				x.setAttribute("height", "100%");
+				x.setAttribute("width", "100%");
+				x.setAttribute("alt", "The Pic");
+				document.getElementById(PicLocation).appendChild(x);
+			
+			<!--JS which creates the add title description into flexbox ITEMs and adds a paragraph with product title />;-->
+			//function createDescription(item) {
+				var titlePara = document.createElement("p");
+				var titleNode = document.createTextNode(item.Title);
+				titlePara.appendChild(titleNode);
+				var titleElement = document.getElementById(Titlelocation);
+				titleElement.appendChild(titlePara);
+				
+			<!--JS which creates the add description into flexbox ITEMs and adds a paragraph with product description />;-->
+			//function createDescription(item) {
+				var desPara = document.createElement("p");
+				var desNode = document.createTextNode(item.Description);
+				desPara.appendChild(desNode);
+				var desElement = document.getElementById(Deslocation);
+				desElement.appendChild(desPara);
+				//The actual description of the item will go here, and we can set it values and attributes through the append methods avaliable here in JS.
+			
+			<!--JS which creates the add function into flexbox ITEMs and adds a paragraph with products price />;-->
+			//function createPrice(item) {
+				var pricePara = document.createElement("p");
+				var priceNode = document.createTextNode("$" + item.Price);
+				pricePara.appendChild(priceNode);
+				var priceElement = document.getElementById(Pricelocation);
+				priceElement.appendChild(pricePara);
+				
+		
+		}
+			
+		<!--JS Function which dynaically loads a flexbox with identical looking flexbox items / with individual id attributes - non working button. -- loads from for loop />;-->
+		function addFlexBoxItems(counter, flexboxTaxi, item){
+						
+			this.flexboxTaxi = flexboxTaxi;
+			var parentIdName = 'flex-container';
+			var price = item.Price;
+			var title = item.Title;
+			
+			var div = document.createElement('div');
+			var currentIdName = "item" + counter;
+			div.setAttribute('class', 'item');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = currentIdName;
+			
+			var div1 = document.createElement('div');
+			currentIdName = "innerItem" + counter;
+			div1.setAttribute('class', 'innerItem');
+			div1.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div1);
+			parentIdName = currentIdName;
+			
+			div = document.createElement('div');
+			currentIdName = "picDesContainer" + counter;
+			div.setAttribute('class', 'picDesConainer');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = currentIdName;
+			
+			<!--JS for new pic container that just contains the picture class="pictureContainer" id="item1pictureContainer"-->
+			div = document.createElement('div');
+			currentIdName = "item" + counter + "pictureContainer";
+			div.setAttribute('class', 'pictureContainer');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = currentIdName;
+			
+			<!-- JS Has been be adjusted to be added within the PicContainer ""-->
+			div = document.createElement('div');
+			currentIdName = "item" + counter + "picture";
+			div.setAttribute('class', 'picture');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			flexboxTaxi.piclocation = currentIdName;
+			parentIdName = "picDesContainer" + counter;
+			
+			div = document.createElement('div');
+			currentIdName = "item" + counter + "descriptionContainer";
+			div.setAttribute('class', 'descriptionContainer');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = currentIdName;
+				
+			div = document.createElement('div');
+			currentIdName = "item" + counter + "descriptionTitle";
+			div.setAttribute('class', 'descriptionTitle');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			flexboxTaxi.titlelocation = currentIdName;
+			
+			div = document.createElement('div');
+			currentIdName = "item" + counter + "description";
+			div.setAttribute('class', 'description');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = "innerItem" + counter;
+			flexboxTaxi.deslocation = currentIdName;
+			
+			div = document.createElement('div');
+			currentIdName = "priceContainer" + counter;
+			div.setAttribute('class', 'priceContainer');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = currentIdName;
+			
+			div = document.createElement('div');
+			currentIdName = "item" + counter + "price";
+			div.setAttribute('class', 'price');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = "innerItem" + counter;
+			flexboxTaxi.pricelocation = currentIdName;
+			
+			div = document.createElement('div');
+			currentIdName = "buttonContainer" + counter;
+			div.setAttribute('class', 'buttonContainer');
+			div.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(div);
+			parentIdName = currentIdName;
+			
+			var form = document.createElement('form');
+			currentIdName = "button" + counter;
+			form.id = currentIdName;
+			form.action = 'https://www.paypal.com/cgi-bin/webscr';
+			form.method = 'post';
+			form.target = '_self';
+			document.getElementById(parentIdName).appendChild(form);
+			parentIdName = currentIdName;
+			
+			var fieldset = document.createElement('fieldset');
+			currentIdName = "fieldset" + counter;
+			fieldset.setAttribute('id', currentIdName);
+			document.getElementById(parentIdName).appendChild(fieldset);
+			parentIdName = currentIdName;
+			
+			var input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'cmd');
+			input.setAttribute('value', '_cart');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'add');
+			input.setAttribute('value', '1');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			<!-- Field where you ADD CLIENTS PAYPAL ACCOUNT link in following input  -->
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'business');
+			input.setAttribute('value', 'labs-feedback-minicart@paypal.com');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.id = "item_name" + counter;
+			input.type = 'hidden';
+			input.name = 'item_name';
+			input.value = title;
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'quantity');
+			input.setAttribute('value', '1');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.type = 'hidden';
+			input.name = 'amount';
+			input.value = price;
+			document.getElementById(parentIdName).appendChild(input);
+
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'shipping');
+			input.setAttribute('value', '4.50');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'handling');
+			input.setAttribute('value', '2.00');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'currency_code');
+			input.setAttribute('value', 'USD');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			<!--Input field added for PayPal Cart CONTINUE SHOPPING Button to go back to host wesite tageted page -->
+			input = document.createElement('input');
+			input.setAttribute('type', 'hidden');
+			input.setAttribute('name', 'shopping_url');
+			input.setAttribute('value', 'http://www.mkalus.aisites.com/bluerockdove/shop.html');
+			document.getElementById(parentIdName).appendChild(input);
+			
+			input = document.createElement('input');
+			input.setAttribute('type', 'image');
+			input.setAttribute('name', 'submit');
+			input.setAttribute('src', 'http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif');
+			input.setAttribute('border', '0');
+			input.setAttribute('width', '87');
+			input.setAttribute('height', '23');
+			input.setAttribute('alt', 'Make payments with PayPal!');
+			document.getElementById(parentIdName).appendChild(input); 
+			
+			
+			return flexboxTaxi;
+			
+		}	
+    </script>	
+	
+<!---------------- ERIC SCRIPT WORK (END) /Head --------------------------->	
+
+
+
+
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<header>
+<div class="fb"><a href="https://www.facebook.com/Blue-Rock-Dove-Adornments-263453217412543/?notif_t=fbpage_fan_invite&notif_id=1489020474893020" title="follow me to facebook"><img src="img/facebook.png"  alt="facebook link" width="36" height="34"></a>
+<span class="paypalcart">
+	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<input class="noborder" type="hidden" name="cmd" value="_cart">
+	<input class="noborder" type="hidden" name="business" value="labs-feedback-minicart@paypal.com">
+	<input class="noborder" type="image" src="https://www.paypal.com/en_US/i/btn/btn_viewcart_LG.gif" name="submit" alt="view cart icon">
+	<img alt="facebook icon" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+	<input type="hidden" name="display" value="1">
+			</form>
+		</span></div>
+  <div class="profileLogo"> 
+    <!-- Profile logo. -->
+    <p class="logoPlaceholder"> <img src="img/logo.png" alt="Blue Rock Dove Adornments Logo"> </p>
+  </div>
+  
+   <!-- Profile Header -->
+  <section class="profileHeader">
+    <img src="img/bluerockdove.png" alt="Italian Cursive Border"><h1>Blue Rock Dove Adornments</h1></section>
+    
+    <!-- Navigation -->
+  <nav class="br">
+  <ul>
+    <li><a href="index.html" title="Home Page">Home</a></li>
+    <li><a href="about.html" title="About Page">About</a></li>
+    <li><a href="contact.php" title="Contact Me">Contact</a></li>
+<li class="dropdown"><a href="shop.html" title="Shop Page">Shop</a>
+          <ul class="dropdown-content">
+            <li><a href="pendants.html" title="Pendant Page">Pendants</a> </li>
+            <li><a href="necklaces.html" title="Necklace Page">Necklaces</a> </li>
+            <li><a href="bracelets.html" title="Bracelet page">Bracelets</a> </li>
+          </ul>
+        </li>
+   </ul>
+</nav>
+</header>
+
+<!---------------- ERIC HTML WORK (BEGIN) /BODY --------------------------->	
+<!-- FLEXBOX (begins) /body -->
+	<div class="Container">
+	
+		<div id = "flex-container"> </div>
+		
+		<script>
+				
+				var flexBoxIdTaxi = new flexboxes();
+				<!--JS Function which loads the properties into the Flexboxes - (used instead of createImage(), createDescription(), createPrice())/>;-->
+				for(i=0;i<itemsArray.length;i++){
+					var itemNum = (itemsArray[i]);
+					
+					
+					<!--JS IF STATEMENT which checks the type of product to be displayed on the page. />;-->
+					<!--  "pendant" || "necklace" || "bracelet" -->
+					if(itemNum.Type == "pendant" || "necklace" || "bracelet" ){
+						//alert(itemNum.Title);
+						addFlexBoxItems(i,flexBoxIdTaxi,itemNum); <!--NEED to get parameters out of flexBoxIdTaxi and transfer them to where fileboxnum currently sits in the loadflexboxwithitems functions parameters in order to create a dynamic sytem of loading the flex box./>;-->
+						loadFlexboxWithItems(i,itemNum,flexboxTaxi.piclocation,flexboxTaxi.titlelocation,flexboxTaxi.deslocation,flexboxTaxi.pricelocation);	
+					}
+				}	
+		</script>
+		
+	</div>	
+<!-- FLEXBOX (ends with JS included) /body -->
+<!---------------- ERIC HTML WORK (END) /BODY --------------------------->	
+
+  <footer>
+  <hr>
+  <p class="footerDisclaimer">2017  Copyrights - <span>All Rights Reserved</span></p>
+  <p class="footerNote">Sandra Abril - <span><a href="mailto:Sandyabril@aol.com">Sandyabril@aol.com</a></span></p>
+</footer>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

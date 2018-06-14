@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.example img {
+	max-width: 850px;
+	padding: 1em;/*fallback*/ 
+	padding: 1em calc(50% - 425px)
+}

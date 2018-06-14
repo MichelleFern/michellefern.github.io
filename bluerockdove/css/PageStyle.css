@@ -1,0 +1,995 @@
+@charset "utf-8";
+/* Global Styles */
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 92%;
+	max-width: 960px;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	text-indent: -3000px;
+	font-size: 1px;
+	max-height: 1px;
+	margin-top: -20px;
+}
+
+/* Header */
+.fb {
+    float: right;
+	padding-top: 2px;
+
+}
+
+.paypalcart {
+    float: right;
+	padding-top: 2px;
+
+}
+
+.noborder {
+	border: none;
+	margin-left: 7px;
+}
+
+/*-------------Navigation bar---------------*/
+
+
+ul li a {
+	list-syle: none;
+}
+nav {
+	/*border-top: #FF8B00 solid 7px;*/ /*removed top line of Clarissa's design*/
+	border-bottom: #FF8B00 solid 5px;
+	padding: 10px;
+	font-size: 25px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+	}
+
+nav ul {
+    list-style: none;
+	margin: 0 auto;
+	/*width: 600px;*/
+	clear: both;
+	padding-top: -15px;
+	display: flex;
+	justify-content: space-around;
+	}
+
+nav ul li {
+	padding: -25px 0 0 0;
+	display: inline;
+	padding-right: 10px;
+	list-style: none;
+
+	}
+ul li a:link{
+    text-decoration: none;
+    color: #FF8B00;
+  }
+  	  
+
+ul li a:visited{
+    text-decoration: none;
+    color: #FFB42E;
+  }
+  
+  ul li a:hover{
+    text-decoration: underline;
+    color: #FF8B00;
+  }
+  
+  ul li a:active{
+    text-decoration: none;
+    color: #30D6E2;
+  }
+
+/*-----------Dropdown menu----------*/
+  
+  .dropdown {
+    position: relative;
+	display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+	max-width: 225px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-weight: normal;
+	line-height: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+header {
+	text-align: center;
+	display: block;
+
+}
+header .profileLogo .logoPlaceholder {
+	width: 187px;
+	text-align: center;
+}
+header .profileLogo .logoPlaceholder img {
+	clear: float;
+	padding-top: 40px;
+	margin-bottom: -40px;
+}
+
+header .logoPlaceholder span {
+	width: 80px;
+	height: 22px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 53px;
+}
+.profilePhoto img {
+	background-color: rgba(237,237,237,1.00);
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.profilePhoto {
+	margin-top: 20px;
+	font-size: 18px;
+}
+header .profileHeader h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 24px;
+	
+}
+header .profileHeader h3 {
+	font-family: sans-serif;
+	color: #FF8B00;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
+hr {
+	height: 1px;
+	background-color: #535353;
+}
+header .profileHeader p {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+	overflow-y: auto;
+	margin-bottom: -25px;
+}
+
+/*.mainContent .profileHeader p {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+	overflow-y: auto;
+}*/
+header .socialNetworkNavBar {
+	position: relative;
+	top: 20px;
+	left: 900px;
+	display: block;
+/*	margin-top: 60px;*/
+	clear: both;
+}
+header .socialNetworkNavBar .socialNetworkNav {
+	border-radius: 50%;
+	cursor: pointer;
+}
+header .socialNetworkNavBar .socialNetworkNav img:hover {
+	opacity: 0.5;
+}
+
+
+/* Main Content sections */
+.mainContent .section1 {
+	display: block;
+}
+.section1 .sectionTitle, .section2 .sectionTitle {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.section1 .sectionTitleRule, .section2 .sectionTitleRule {
+	margin: 0 3% 0 0;
+	float: left;
+	clear: both;
+}
+.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
+	background-color: rgba(208,207,207,1.00);
+	height: 1px;
+	padding: 0px;
+}
+.mainContent .section1 .section1Content {
+	font-family: ProximaNova;
+	font-size: 14px;
+	font-weight: 100;
+	color: rgba(208,207,207,1.00);
+}
+.mainContent .section1 .section1Content span {
+	color: rgba(146,146,146,1.00);
+	font-family: sans-serif;
+}
+.section2 .sectionContentTitle {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 18px;
+	font-weight: 700;
+}
+.section2 .sectionContentSubTitle {
+	font-family: sans-serif;
+	color: rgba(68,67,67,1.00);
+	font-size: 14px;
+	font-weight: 400;
+}
+.section2 .sectionContent {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+}
+.mainContent {
+	display: block;
+}
+.mainContent .externalResourcesNav .externalResources {
+	background-color: rgba(208,207,207,1.00);
+	display: inline-block;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 3%;
+	cursor: pointer;
+}
+.mainContent .externalResourcesNav .externalResources:hover {
+	background-color: rgba(153,153,153,1.00);
+}
+.externalResourcesNav .externalResources a {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+/*.stretch {
+	content: '';
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+}*/
+
+
+/* -------- fixes carousel image issue  ---------*/
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  padding: 30px;
+
+}
+
+/*----------------- Contact Form ------------------*/
+input {
+	border: #FF8B00 solid 4px;
+}
+
+textarea {
+	border: #FF8B00 solid 4px;
+}
+
+table {
+	margin-left: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#collections-grid .collections-grid-table {
+	font-color: #FF8B00;
+}
+
+/*-----------flex boxes on home page-----------*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-color: #FF8B00;
+}
+
+.flex-item {
+    width: 200px;
+    height: 250px;
+    margin: 50px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-color: #FF8B00;
+}
+
+.flex-item img {
+	width: 200px;
+	height: 250px;
+	border-radius: 20%;
+	
+}
+
+/* Footer */
+footer {
+	clear: both;
+}
+
+footer .footerDisclaimer {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(104,103,103,1.00);
+	font-weight: 700;
+}
+footer .footerDisclaimer span {
+	color: rgba(181,178,178,1.00);
+	font-weight: 400;
+}
+footer .footerNote {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(104,103,103,1.00);
+	font-weight: 700;
+}
+footer .footerNote span {
+	color: rgba(181,178,178,1.00);
+	font-weight: 400;
+}
+
+/* Form */
+
+runnername {
+	border-color: #FB00800;
+}
+
+/*    This prevents a border around the carousel     */
+.item.active {
+	border: none;
+}
+
+.carousel-inner > .item {
+	border: none;
+}
+/* ------------Media query for odd sizes--------------------------*/
+@media only screen and (min-width : 481px) and (max-width : 630px) {
+nav {
+	text-align: left;
+	font-size: 22px;
+}
+
+header .profileHeader img{
+	width: 85%;
+	height: 85%;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+header .profileLogo .logoPlaceholder img {
+	margin-left: 50%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 150px;
+    height: 350px;
+    background-color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	color: #FF8B00;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 650px;
+	text-align: center;
+	
+}
+
+.flex-item {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	color: #FF8B00;
+	font-size: 20px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 150px;
+	}
+	
+}
+
+
+
+/* -----------------Media query for Mobile devices----------------------*/
+	
+
+
+@media only screen and (min-width : 285px) and (max-width : 480px) {
+body {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* Header */
+header {
+	width: 100%;
+	float: none;
+
+}
+header .profileLogo .logoPlaceholder {
+	display: inline-block;
+}
+header .profileLogo .logoPlaceholder img {
+	margin-left: 60%;
+}
+header .profilePhoto {
+	display: inline-block;
+}
+header .profileHeader {
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+header .profileHeader img{
+	width: 85%;
+	height: 85%;
+}
+
+nav {
+	text-align: left;
+	font-size: 17px;
+}
+
+header .socialNetworkNavBar {
+	text-align: center;
+	display: block;
+	margin-top: 60px;
+	clear: both;
+	margin-bottom: 15%;
+}
+header .socialNetworkNavBar .socialNetworkNav {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	margin-right: 23px;
+}
+/* Main content sections */
+.mainContent .section1 {
+	text-align: center;
+	margin-bottom: 10%;
+}
+.section1 .section1Title, .section2 .section1Title {
+	text-align: center;
+}
+.section1 .sectionTitleRule, .section2 .sectionTitleRule {
+	width: 100%;
+}
+.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
+	display: none;
+}
+.mainContent .section1 .section1Content {
+	display: inline-block;
+	text-align: left;
+	font-family: sans-serif;
+	text-align: justify;
+}
+.mainContent .section2 {
+	display: block;
+	text-align: center;
+}
+.section2 .section2Content {
+	margin-top: 10%;
+	text-align: justify;
+	margin-bottom: 10%;
+}
+.mainContent .externalResourcesNav {
+	margin-bottom: 10%;
+}
+.mainContent .externalResourcesNav .externalResources {
+	width: 100%;
+	height: 35px;
+}
+
+table {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  padding: 30px;
+
+}
+
+
+
+
+
+/*------Flex boxes on home page for mobile start------*/
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	color: #FF8B00;
+	font-size: 20px;
+	flex-direction: column;
+	margin-left: 75px;
+	margin-top: 30px;
+	margin-bottom: 650px;
+	text-align: center;
+	
+}
+
+.flex-item {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	color: #FF8B00;
+	font-size: 20px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 150px;
+	}
+
+.secnav{
+	text-align: center;
+	margin-left: 40px;
+}
+
+/*-------------Flex boxes on home page for mobile end-------------*/
+
+/* Footer */
+footer {
+	display: block;
+	text-align: center;
+	font-family: sans-serif;
+}
+}
+
+/* --------------Media Query for Tablets--------------- */
+@media only screen and (min-width : 481px) and (max-width : 1024px) {
+/* Header */
+header {
+	width: 100%;
+	float: none;
+}
+header .profileLogo .logoPlaceholder {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header .profileLogo .logoPlaceholder img {
+	margin-left: 50%;
+}
+header .profilePhoto {
+	float: left;
+	clear: both;
+	margin-right: 3%;
+	margin-top: 5%;
+}
+header .profileHeader {
+	text-align: center;
+/*	margin-top: 7%;*/
+}
+
+
+
+header .socialNetworkNavBar .socialNetworkNav {
+	width: 74px;
+	height: 74px;
+	display: inline-block;
+	margin-right: 23px;
+}
+/* Main content and sections */
+.section1 .section1Title, .section2 .section1Title {
+	text-align: center;
+}
+.section1 .sectionTitleRule, .section2 .sectionTitleRule {
+	width: 100%;
+}
+.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
+	display: none;
+}
+.mainContent .section1 .section1Content {
+	display: block;
+	margin: 0% 0% 0% 20%;
+	font-family: sans-serif;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.mainContent .section2 {
+	clear: both;
+}
+.section2 .section2Content {
+	padding: 0px;
+	margin-left: 20%;
+	font-family: sans-serif;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.mainContent .externalResourcesNav {
+	margin-left: 20%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	padding-top: 0px;
+	clear: both;
+}
+.mainContent .externalResourcesNav .externalResources {
+	width: 199px;
+	height: 48px;
+	margin-top: 5%;
+}
+
+table {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 100px;
+}
+/* Footer */
+footer .footerDisclaimer {
+	float: left;
+	margin-left: 3%;
+	font-family: sans-serif;
+}
+footer .footerNote {
+	float: right;
+	margin-right: 3%;
+	font-family: sans-serif;
+}
+
+/*------Flex boxes on home page for tablet start------*/
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	color: #FF8B00;
+	font-size: 20px;
+	margin-left: 15px;
+	margin-top: 30px;
+	margin-bottom: 650px;
+	text-align: center;
+	
+}
+
+.flex-item {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	color: #FF8B00;
+	font-size: 20px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 150px;
+	}
+
+
+
+/*-------------Flex boxes on home page for tablet end-------------*/
+}
+
+/* ----------Desktops and laptops-----------  */
+@media only screen and (min-width:1025px) {
+/* Header */
+header .profileLogo .logoPlaceholder {
+	float: left;
+	margin-bottom: 50px;
+}
+header .profilePhoto {
+	float: left;
+	clear: both;
+	margin-right: 3%;
+}
+header .profileHeader {
+	text-align: left;
+	padding-top: 10%;
+}
+header .socialNetworkNavBar .socialNetworkNav {
+	width: 74px;
+	height: 74px;
+	display: inline-block;
+	margin-right: 23px;
+}
+/* Main content sections */
+.section1 .sectionTitleRule, .section2 .sectionTitleRule {
+	width: 22.5%;
+}
+.mainContent .section1 .section1Content {
+	display: block;
+	margin-top: 0%;
+	margin-right: 0%;
+	margin-left: 26%;
+	margin-bottom: 0%;
+	font-family: sans-serif;
+}
+.mainContent .section2 {
+	clear: both;
+}
+.section2 .section2Content {
+	padding: 0px;
+	margin-left: 26%;
+	font-family: sans-serif;
+}
+.mainContent .externalResourcesNav {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	padding-top: 0px;
+	clear: both;
+}
+.mainContent .externalResourcesNav .externalResources {
+	width: 199px;
+	height: 48px;
+}
+
+
+/* Footer */
+footer .footerDisclaimer {
+	float: left;
+	margin-left: 3%;
+	font-family: sans-serif;
+}
+footer .footerNote {
+	float: right;
+	margin-right: 3%;
+	font-family: sans-serif;
+}
+}
+
+
+
+
+/*//////////// CSS FROM ERICS WORK (Begin) /////////////////*/
+/*//////////// CSS for flexbox CONTAINER (begin) /////////////////*/
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FF8B00;
+  
+  
+  
+}
+   
+#flex-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top:20px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}  
+   
+.item {
+  width: 400px;  /* Or whatever */
+  height: 400px; /* Or whatever */
+  margin-top:2%;
+  margin-bottom:2%;
+  margin-left:auto;
+  margin-right:auto;
+  border:2px solid #BDC3C7;
+  
+ 
+}  
+
+
+
+
+
+/*//////////// CSS for flexbox ITEM (begin) /////////////////*/
+
+.innerItem{
+	position:relative;
+	border:5px solid white;
+	height:97.5%;
+	width:97.5%;
+/*	//margin:5%;*/
+
+}
+.picDesConainer{
+	position:relative;
+	border:5px solid white;
+	height:60%;
+	width:97.5%;
+
+}
+.pictureContainer{
+	position:relative;
+	height:96%;
+	width:47.35%;
+	float:left;
+	border:5px solid white;
+	
+	
+}
+.picture{
+	position:relative;
+	height:96%;
+	width:94.75%;
+	float:left;
+	border:5px solid white;
+	
+	
+}
+.picture:hover {
+  
+  -moz-transform: scale(3.0);
+  -webkit-transform: scale(3.0);
+  transform: scale(3.0);
+  z-index: 999;
+  border:8px solid #A6ACAF;
+  border-radius:5%;
+  
+  
+}
+.descriptionContainer{
+	position:relative;
+	height:96%;
+	width:47.35%;
+	float:right;
+	border:5px solid white;
+	margin-left:.25%;
+
+}
+.descriptionTitle{
+	position:relative;
+	height:25%;
+	width:95%;
+	float:left;
+	border:5px solid white;
+	font-family:"Gill Sans MT","Gill Sans MT","Myraid Pro","DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:1.25em;
+/*	//margin-left:.25%;*/
+
+	
+}
+.description{
+	position:relative;
+	height:67%;
+	width:95%;
+	float:left;
+	border:5px solid white;
+	font-family:"Gill Sans MT","Gill Sans MT","Myraid Pro","DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+/*	//margin-left:.25%;*/
+
+}
+
+
+.priceContainer{
+	position:relative;
+	width:97.5%;
+	height:16%;
+	border:5px solid white;
+/*	//float:left;
+	//padding:15px;*/
+	
+}
+
+.price{
+	position:relative;
+	height:35px;
+	width:75px;
+	border:5px solid white;
+	margin:5px;
+	float:right;
+	padding:5px;
+	font-size:1.25em;
+
+	
+}
+.buttonContainer{
+	position:relative;
+	width:97.5%;
+	height:25%;
+	border:5px solid white;
+/*	//float:left;
+	//padding:15px;*/
+	
+}
+
+button{
+	position:relative;
+	height:35px;
+	width:100px;
+	border:5px solid white;
+	margin:5px;
+	float:right;
+	padding:5px;
+	background-color:#ff8b00;
+	font-family:"Gill Sans MT","Gill Sans MT","Myraid Pro","DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+fieldset{
+	border:none;
+	float: right;
+
+}
+/*//////////// CSS for flexbox ITEM (end) /////////////////*/ 
+/*//////////// CSS for flexbox CONTAINER (end) /////////////////*/   
+/*//////////// CSS FROM ERICS WORK (Begin) /////////////////*/
+
+.secnav{
+	color: #FF8B00;
+	font-size: 16px;
+	padding: 20%;
+}
+
+

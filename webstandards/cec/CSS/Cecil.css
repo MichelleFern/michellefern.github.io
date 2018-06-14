@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.example {
+	background-color: white;
+}
+
+.interactive {
+	background-color: #194FF4;
+}
+
+.info {
+	background-color: dodgerblue;
+}
+
+.footer {
+	background-color: white;
+}
+.example h2, 
+.example h4, 
+.example p {
+	color: #000;
+}

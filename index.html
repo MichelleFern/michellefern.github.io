@@ -1,59 +1,293 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8">
-    <title>MichelleFern.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Michelle Fern</title>
+    
+	<meta name="author" content="Michelle Fern" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
 
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/grids.css" rel="stylesheet" type="text/css">
+    <link href="img/favicon.png" rel="shortcut icon" />
+	
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
 
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
+	<script type="text/javascript" src="js/fullpage.scrollHorizontally.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
+	<script type="text/javascript">
+	
+	<!--   Fullpage Horizontal Scroll    -->
+$(document).ready(function() {
+		$('#myContainer').fullpage({
+			<!--sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc']-->,
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+			menu: '#menu',
+			slidesNavigation: true,
+			scrollHorizontally: true,
+			scrollHorizontallyKey: 'bWljaGVsbGVmZXJuLmNvbV9ienhjMk55YjJ4c1NHOXlhWHB2Ym5SaGJHeDVPUVk=',
+			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+				console.log("slideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
 
-        @media only screen and (max-width: 280px) {
+			},
+			onSlideLeave: function(anchorLink, index, slideIndex, direction){
+				console.log("----------------");
+				console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+			}
+		});
+	});
+	
+	
+	<!--    Swap image scripts    -->
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-            body, p {
-                width: 95%;
-            }
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
 
-        }
-
-    </style>
 </head>
-<body>
-    <h1>Michelle Fern</h1>
+<body onLoad="MM_preloadImages('webstandards/mic/img/fox2.png','img/brdcodecss.png','img/next_.png')">
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Projects</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Resume</a></li>
+</ul>
+
+<!--<ul class="preview-extensions-menu">
+	<li class="preview-more-extensions"><a href="http://alvarotrigo.com/fullPage/extensions/">More extensions</a></li>
+	<li class="preview-buy-extension"><a href="https://gum.co/fullpageScrollHorizontally">Download extension</a></li>
+</ul>-->
+
+<div id="myContainer">
+    
+    <div class="section">
+      <div class="slide home">
+        <di class="intro">
+          <img src="img/meowlclick_follow.png" alt="image of an owl" class="meclick">
+          
+        </di>
+      </div>
+      <div class="slide web"><a href="webstandards/index.html" target="new"><img src="img/webowl.png" alt="webstandards owl" class="first"/></a></div>
+      <div class="slide trivia"><a href="Trivia/mainPageIndex.html" target="new"><img src="img/trivowl.png" alt="trivia owl"/></a></div>
+      <div class="slide brd"><a href="bluerockdove/index.html" target="new"><img src="img/brdowl.png" alt="blue rock owl"/></a></div>
+      <div class="slide zen"><a href="zengarden/index.html" target="new"><img src="img/zenowl.png" alt="zen garden owl"/></a></div>
+      <div class="slide aa"><a href="animate/index.html" target="new"><img src="img/aaowl.png" alt="animate owl"/></a></div>
+    </div>
+    <div class="section"><div class="aboutme"><div class="grid-containers">
+  <div class="item11"><img src="img/uke.jpg" alt="photo of me playing ukulele" height="400" class="uke"></div>
+  <div class="item21"><p id="michelle">My name is Michelle Fern.</p><h1> I am a crafter, a musician, a designer, and a coder.  I have a Bachelor’s degree in Theater Arts and I am, at this very moment, completing an Associate’s degree in Web Design.  I am the Registrar at the Art Institute of California – San Francisco during the week and I volunteer at historical play fairs during most weekends.  In my remaining “spare” time I am either playing ukulele for my cats or making rainbow origami sculptures out of starburst wrappers.</h1><p>I am shy but I am brave</p><p>I am imperfect but I am awesome</p><p><img src="img/meowl.png" alt="image of an owl with glasses" height="300"></p></div>
+  <div class="item31"></div>  
+  <div class="item41"></div>
+  <div class="item51"><img src="img/fair.jpg" alt="photo of me at renaissance fair" height="300"></div>
+  <div class="item61"><img src="img/cats.jpg" alt="photo of my cats" height="250"></div>
+  <div class="item71"></div>
+  <div class="item81"></div>
+  <div class="item91"><!--<img src="img/bench.jpg" alt="photo of me on a rainbow bench" height="150">--></div>
+
+     
+</div></div></div>
+<div class="section"><div class="slide project"><img src="img/meowlscroll.png" alt="image of an owl"></div>
+		<div class="slide"><div class="grid-container">
+  <div class="item1"><h2>Class: GWDA236 Web Standards
+</h2><p>Assignment: Group project - create a website that showcases html5 and CSS3</p></div>
+  <div class="item2"><img src="webstandards/images/uniUp.png" alt="Uni Logo"/></div>
+  <div class="item3"><h2>Team:</h2>
+<p>Michelle Fern: Audio/Video - Team Lead</p>
+<p>Joseph Linares: Semantics</p>
+<p>Briana Armenta: Animation</p>
+<p>Cecil Baxter: Canvas</p>
+<p>Donovan Carmichael: API</p>
+<p>Garry Medina: Canvas</p></div>  
+  <div class="item4"><img src="img/webcolor.png" alt="color palate"/></div>
+  <div class="item5"><p>Sample Code - hover over the fox!</p><p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Fox','','webstandards/mic/img/fox2.png',1)"><img src="webstandards/mic/img/fox.png" alt="Fox" id="Fox"><audio id="sound-two" preload="auto">
+          <source src="webstandards/mic/media/fox.mp3"></source>
+          <source src="webstandards/mic/media/fox.ogg"></source>
+          Your browser doesn't like super fun audio time. </audio></a></p><p><img src="img/foxcode.png" alt="html code for fox" class="webcode"/></p></div>
+  <div class="item6"><h2>Challenges:  This was my first assignment
+as a team lead and keeping everyone on track
+and on the same page while we were juggling 
+other assignments was definitely the most difficult 
+part.   Once everyone had fully bought into the 
+concept though, it was much easier to stay on target.</h2></div>
+  <div class="item7"><h2>Highlights:  From day one I was very excited about
+this assignment.  I had not done anything with audio
+or video before so I was thrilled to have an excuse 
+to lresearch it.  I am especially proud of the interactive
+portion of my page - hover changes over images are
+my new favorite way to spice up a page!</h2></div>
+  <div class="item8"><a href="webstandards/index.html" target="new"><img src="img/clickwebowl.png" alt="web standards owl"/></a><a href="webstandards/mic/audvid.html" target="new"><img src="img/clickwebowl_.png" alt="web standards owl"/></a></div>  
+</div></div>
+		<div class="slide"><div class="grid-container">
+  <div class="item1"><h2>Class: GWDA243: Object Oriented Scripting
+</h2><p>Assignment: Group project - create an interactive website using Javascript</p></div>
+  <div class="item2"><img src="img/triviabackground.png" alt="Trivia Background Image"/></div>
+  <div class="item3"><h2>Team:</h2>
+<p>Michelle Fern: 2000’s triva multiple choice game</p>
+<p>Clarissa Ray: 1990’s drag and drop game</p>
+<p>Eric Dunn: 1980’s hangman game</p>
+<p>Ozan Ulucan: 1970’s memory game</p>
+</div>  
+  <div class="item4"><img src="img/triviasample.png" alt="sample from trivia"/></div>
+  <div class="item5"><p>Sample Code - hover over the button to see!</p><div class="button" id="next"><a href="#">Next</a></div><p><img src="img/nextcode.png"  alt="Next Code" class="trivimg"/></p>
+  </div>
+  <div class="item6"><h2>Challenges: In this project we agreed on the
+concept very quickly, but we all struggled with
+coding our individual pages as we were all new
+to javascript. I did more research in this
+class than any other in my entire degree! Luckily
+the team was very supportive and everytime
+one of us had a break through - we would share
+it with the rest.</h2></div>
+  <div class="item7"><h2>Highlights: The best part of this project was
+the team dynamic. The coding was diffcult for
+most of us but everyone was so supportive that
+it did not feel as daunting as it might have. Every
+time we met and brainstormed, each individual
+page became better.</h2></div>
+  <div class="item8"><a href="Trivia/mainPageIndex.html" target="new"><img src="img/clicktrivowl.png" alt="trivia owl"/></a><a href="Trivia/trivia2000s/multichoiceIndex.html" target="new"><img src="img/clicktrivowl_.png" alt="trivia owl"/></a></div></div></div>
+		<div class="slide"><div class="grid-container">
+  <div class="item1"><h2>GWDA283: Advanced Web Design
+</h2><p>Assignment: Group project - Find a client and create a website to their specifications</p></div>
+  <div class="item2"><img src="img/brdlogo.png" alt="Blue Rock Dove Logo"/></div>
+  <div class="item3"><h2>Team:</h2>
+<p>Michelle Fern: Web Tech Lead</p>
+<p>Edward Crocker: Project Manger</p>
+<p>Clarissa Ray: Art Director</p>
+<p>Eric Dunn: Usabilty Lead</p>
+</div>  
+  <div class="item4"><img src="img/brdcolors.png" alt="color palate"/></div>
+  <div class="item5"><p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('brdcode','','img/brdcodecss.png',1)"><img src="img/brdcode.png" alt="blue rock dove code"  id="brdcode"></a></p>
+  </div>
+  <div class="item6"><p class="brdslide">Challenges: This was my first team project and I
+discovered how vital communication is, especially
+when our client contact person missed several
+important meetings. The client was very specific in
+her vision and the necessity for good communication
+was very clear.</p>
+<p>We struggled at first to design something we could
+all be proud to produce, but as a team pulled
+together to create a site the client absolutely loved.
+I learned a lot about working both in teams, and also
+with a client with a very different design aesthetic.</p></div>
+  <div class="item7"><p class="brdslide">Highlights: The biggest highlight for me was coding
+the site. I really enjoyed having the design handed to
+me and figuring out how to make it happen.</p>
+<p>Besides coding the site, the challenges were the best
+part of this assignment. Before this class, I thought that
+I did not like working in a group. Now I know that, in
+general, I would actually prefer to work in a group.</p></div>
+  <div class="item8"><a href="bluerockdove/index.html" target="new"><img src="img/clickbrdowl.png" alt="blue rock dove owl"/></a><a href="bluerockdove/shop.html" target="new"><img src="img/clickbrdowl_.png" alt="blue rock dove owl"/></a></div>  
+</div></div>
+		<div class="slide"><div class="grid-container">
+  <div class="item1"><h2>Class: GWDA273 Intermediate Web Design
+</h2><p>Assignment: Zen Garden</p></div>
+  <div class="item2"><img src="img/trees.png" alt="Image of Trees with windows"/></div>
+  <div class="item3">
+<p>“A demonstration of what can be accomplished through CSS-based design.”</p>
+<p>http://www.csszengarden.com/</p>
+</div>  
+  <div class="item4"><img src="img/zengardenlogo.png" alt="logo for css zen garden"/></div>
+  <div class="item5" id="zen"><p><img src="img/treeexample.png" alt="background for example of zen code" class="zenimg" /></p>		<div class="summary" id="zen-summary">
+			
+			<p></p><p><img src="img/zencode.png" alt="example of code from zen garden"></p>
+		</div>
+  </div>
+  <div class="item6"><p>Challenges:  In this assignment, we were given the
+html code but only allowed to adjust the css.  At this
+point in my education, I fixed a lot of issues by adding
+classes or ids or adding a new &lt;div&gt;.  In this assignment,
+I had to move outside my comfort zone.</p></div>
+  <div class="item7"><p>Highlights:  It took me a long time to come up with a
+concept for this design, but I was very excited once I 
+settled on the trees with the expanding windows.  I 
+had created the image in one of my other classes and
+I was very happy to be able to use it for another project.</p></div>
+  <div class="item8"><a href="zengarden/index.html" target="new"><img src="img/clickzenowl.png" alt="zen owl"/></a><a href="http://www.csszengarden.com/" target="new"><img src="img/clickzenowl_.png" alt="zen owl"/></a></div>  
+</div></div>
+		<div class="slide"><div class="grid-container">
+  <div class="item1"><h2>Class: GWDA213 Timeline Animation and Interaction
+</h2><p>Assignment: Zen Garden</p></div>
+  <div class="item2"><img src="img/animatepic_.png" alt="still picture of tween project"/></div>
+  <div class="item3"><p></p></div>  
+  <div class="item4"><img src="img/animatepic.png" alt="still picture of animate project"/></div>
+  <div class="item5"><p><embed src="animate/animatedlogoplay.swf" width="550px" height="400px" /></p></div>
+  <div class="item6"><p>Challenges:  I have always considered myself more
+“artistic” than an actual artist.   Learning how to
+animate using Adobe definitely pushed my creativity 
+to the limit.</p></div>
+  <div class="item7"><p>Highlights:  I have become more confident in creating
+assets.  Almost all of the assets on my portfolio site were 
+created in Animate and then refined in Illustrator.
+</p></div>
+  <div class="item8"><a href="animate/index.html" target="new"><img src="img/clickaaowl.png" alt="zen owl"/></a></div>  
+</div></div>
+</div>
+    
+    <div class="section" id="res"><div class="resume"><a href="img/kalus resume.pdf" title="link to download resume" target="_blank"><img src="img/meowlclick_resume.png" alt="imgage of an owl with glasses"></a></div><div class="res"><img src="img/kalus-resume.png" alt="zen owl"/></div></div>
+  </div>
+
+<input type="hidden" id="_4" value="3" />
+
+
+
+
+<!-- JS for fox sound --> 
+<script> 	
+var soundTwo = $("#sound-two")[0];
+$("#Fox")
+	.mouseenter(function() {
+		soundTwo.play();
+	});
+		
+	</script>
+    
+    
+<!--    Animates buttons on hover   -->
+    <script>
+  $(".button").on("mouseenter", function () {
+    $(this).addClass("active");
+  });
+  $(".button").on("mouseleave", function () {
+    $(this).removeClass("active");
+  });
+  </script>
+    
+
+
+<script src="Trivia/trivia2000s/js/multichoiceIndex.js" language="javascript" type="text/javascript"></script>
 </body>
 </html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

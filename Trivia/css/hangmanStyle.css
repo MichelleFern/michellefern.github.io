@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*  Movie Trivia Game Main CSS */
+/* CSS DOcument */
+
+html{
+	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black," sans-serif";
+}
+
+body{
+	background-image: url(../img/theater.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1200px;
+	margin: auto;
+	
+}
+.draggableFlexItem{
+	height: 180px;
+	width: 130px;
+	border: 5px solid black;
+	margin: 5px 20px; 
+	cursor: pointer;
+	z-index: 100;
+}
+
+

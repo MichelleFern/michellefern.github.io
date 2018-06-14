@@ -1,0 +1,157 @@
+	
+
+body {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.scroll {
+		width: 13680px;
+		height: 600px !important;
+		position: fixed;
+	}
+
+/*   Owl Positioning  */
+.fp-tableCell {
+	display: table-cell;
+	position: relative;
+	/*top: -68px;*/
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.home {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/tree.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.web {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/branch.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.trivia {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/branch_.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.brd {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/branch_3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.zen {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/branch_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.aa {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/branch_4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.intro h1 {
+	font-size: 70px;
+}
+
+.web img {
+	margin-top: -30px;
+	position: relative;
+}
+
+.trivia img {
+	margin-top: 100px;
+	position: relative;	
+}
+
+.brd img {
+	margin-top: 160px;
+	margin-left: -180px;
+	postion: relative;
+}
+
+.zen img{
+	margin-top: 240px;
+	position: relative;
+}
+
+.aa img {
+	margin-top: 330px;
+	margin-left: 10px;
+	postion: relative;
+}
+
+.meclick {
+	margin-top: -1%;
+	margin-left: 20%;
+}
+
+.aboutme {
+/*	width: 100%;*/
+	height: 100%;
+	position: relative;
+	background-image: url(../img/abouttree.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/projecttree.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#res {
+		width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(../img/resumetree.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.resume {
+	float: left;
+	margin-left: 2%;
+	margin-top: 5%;
+
+}
+
+.res {
+	margin-right: 20%;
+}
+
+.slide.project img {
+	margin-top: -2.5%;
+	margin-left: 2%;
+}
+
+.resume a img {
+	margin-top: 15%;
+	margin-left: 30%;	
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2 {
+    color: #7055CE;
+}
+
+.example a,
+.interactive a {
+	color: #7055CE;
+	width: 200px;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.example img,
+.interactive img {
+	max-width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.footer {
+    background-color: #7055CE;
+    color: white;
+}

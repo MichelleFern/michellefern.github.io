@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: .5%; 
+	padding: 1%;
+
+	}
+	
+	.box1 {
+    height: 280px;
+    width: 200px;
+	margin-bottom: 1%;
+	padding: 1%;
+/*		background-color: purple;*/
+
+}
+
+	.box2 {
+    height: 200px;
+    width: 200px;
+/*		background-color: blue;*/
+
+
+}
+
+	.box3 {
+    height: 280px;
+    width: 200px;
+	margin-bottom: 1%;
+	padding: 1%;
+/*		background-color: green;*/
+
+}
+
+.orange {
+	color: #D95A26;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.12rem;
+}
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
